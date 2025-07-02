@@ -1,0 +1,44 @@
+// 13.Utilizando o conceito de funções, escreva um programa com 5 opções: 4
+//  para realizar as operações matemáticas básicas, e 1 para encerrar o
+//  programa. Ex:
+//  1 – Adição
+//  2 – Subtração
+//  3 – Multiplicação
+//  4 – Divisão
+//  0 – Sair
+
+#include <stdio.h>
+float Adição(float a , float b){
+    return a+b;
+}
+float Subtração(float a , float b){
+    return a-b;
+}
+float Multiplicação(float a , float b){
+    return a*b;
+}
+float Divisão(float a , float b){
+    return a/b;
+}
+
+void main(){
+    float a=0,b=0;
+    int calc;
+    printf("CALCULADORA\n\n");
+    printf("Digite os numeros para fazer a operação:\n");
+    scanf("%f",&a);
+    scanf("%f",&b);
+    printf("Escolha a operação:\n\n");
+    printf("1 – Adição\n2 – Subtração\n3 – Multiplicação\n4 – Divisão\n0 – Sair\n");
+    scanf("%d",&calc);
+    
+    if(calc==1)
+        printf("Resultado é:%.2f",Adição(a , b));
+    if(calc==2)
+        printf("Resultado é:%.2f",Subtração(a , b));
+    if(calc==1)
+        printf("Resultado é:%.2f",Adição(a , b));
+    if(calc==2)
+        printf("Resultado é:%.2f",Subtração(a , b));
+        
+}
